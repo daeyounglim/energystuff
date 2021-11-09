@@ -1,0 +1,20 @@
+Package: energystuff
+Type: Package
+Title: Regression Modeling and Monitoring of Energy Data
+Version: 1.0
+Date: 2021-11-08
+Authors@R: c(
+      person("Daeyoung", "Lim", email = "daeyoung.lim@uconn.edu",
+      role = c("aut", "cre")),
+      person("Ming-Hui", "Chen", email = "ming-hui.chen@uconn.edu",
+      role = "ctb"))
+Maintainer: Daeyoung Lim <daeyoung.lim@uconn.edu>
+Description: Contains functions performing hybrid monitoring for energy consumption data through Monte Carlo sampling. Currently, the package implements the multivariate hybrid monitoring of monthly consumption data modeled as a multivariate normal random sample. For maximal computational efficiency, the multiplicity corrections are rewritten in C++ and many for loops deploy parallel computing via OpenMP.
+License: GPL-2
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Imports: Rcpp, RcppArmadillo, RcppProgress
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
