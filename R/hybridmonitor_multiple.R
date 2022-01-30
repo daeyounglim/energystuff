@@ -25,6 +25,7 @@
 	cntrl <- list(B1=2000, B2=2000, B3 = 5000, sig_level=0.05)
 	cntrl[names(control)] <- control
 	K <- ncol(y_Kp1)
+	z_alpha_K <- qnorm((1-cntrl$sig_level)^(1/K))
 	if (is.null(m_idx)) {
 		m_idx <- c(0L:11L)
 	} else {
